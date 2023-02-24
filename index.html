@@ -4,44 +4,52 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
   <title>Frontend Mentor | QR code component</title>
   <style>
     body{
-      width: 62.5%;
       background: hsl(212, 45%, 89%);
-      padding: 100px;
-      margin: 100px;
-      font-family: 
     }
     section {
       width: 100%;
-      display: flex;
       justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-family: 'Outfit', sans-serif;
         }
     .card {
-      width: 100%;
-      height: 100%;
+      width: 400;
+      height: 400;
       background: white;
       border-radius: 30px;
-      overflow: hidden;
     }
     .card img {
-        width: 100%;
-        height: 35%;
+        width: 500;
+        height: 500;
+        border-radius: 30px;
+        height: auto;
+        width: auto;
+        max-width: 300px;
+        max-height: 300px;
+        margin-top: 20px;
+        margin-left: 20px;
+       margin-right: 20px;
+        margin-bottom: 20px;
         }
-    p {
+    .title {
+      font-size: 15px;
+      font-weight: 700;
+      }
+    .text {
       text-align: center;
       font-size: 15px;
+      font-weight: 400;
       }
     .attribution {
       font-size: 11px; 
-      text-align: center; 
     }
     .attribution a { 
       color: hsl(228, 45%, 44%); 
-    }
-    .QR {
-      position: inherit;
     }
   </style>
 </head>
@@ -49,8 +57,8 @@
   <section>
     <div class="card">
       <div class="QR"><img src="/images/image-qr-code.png" alt="CodigoQR"></div>
-      <b><p>Improve your front-end skills by building projects</p></b>
-      <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+      <p class="title">Improve your front-end skills by building projects</p>
+      <p class="text">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
       <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
       Coded by <a href="#">Esteban Cadavid Vélez</a>.
